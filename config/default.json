@@ -1,0 +1,20 @@
+{
+  "port": 3001,
+  "db_host": "localhost",
+  "db_username": "postgres",
+  "db_password": "5432",
+  "db_port": 5432,
+  "tokenKey": "MyVeryVerySecretKey",
+  "tokenTime": 86400,
+  "access_key": "AdminAccessKeyTokenSecretKey",
+  "refresh_key": "AdminRefreshKeyTokenSecretKey",
+  "db_name": "qx_texnika_ijara",
+  "access_time": "1d",
+  "refresh_time": "15d",
+  "refresh_cookie_time": 1296000000,
+  "smtp_password": "grtdddqtzixdffzx",
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "qushaqovjabor@gmail.com",
+  "api_url": "http://localhost:3001"
+}
