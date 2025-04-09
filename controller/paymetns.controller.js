@@ -1,5 +1,5 @@
 const { errorHandler } = require("../helpers/error_handler");
-const Payments = require("../models/Payments.models");
+const Payments = require("../models/payments.models");
 const paymentValidation = require("../validations/paymnets.validation");
 
 const addNewPayment = async (req, res) => {

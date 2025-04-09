@@ -1,7 +1,6 @@
 const sequelize = require("../config/db");
 const { DataTypes } = require("sequelize");
 const Owners = require("./owners.models");
-const Contracts = require("./contracts.models");
 const Categories = require("./categories.models");
 
 const Products = sequelize.define(
@@ -21,10 +20,6 @@ const Products = sequelize.define(
     },
     category_id: {
       type: DataTypes.INTEGER,
-      references: {
-        model: "categories",
-        key: "id",
-      },
     },
     title: {
       type: DataTypes.STRING,
@@ -54,13 +49,11 @@ const Products = sequelize.define(
   }
 );
 
-Products.belongsTo(Owners);
-Owners.hasMany(Products);
+Products.belongsTo(Owners, { foreignKey: "owner_id" });
+Owners.hasMany(Products, { foreignKey: "owner_id" });
 
-Products.belongsTo(Contracts);
-Contracts.hasMany(Products);
 
-Products.belongsTo(Categories);
-Categories.hasMany(Products);
+Products.belongsTo(Categories, { foreignKey: "category_id" });
+Categories.hasMany(Products, { foreignKey: "category_id" });
 
 module.exports = Products;

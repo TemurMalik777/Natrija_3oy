@@ -96,10 +96,50 @@ const deleteContractById = async (req, res) => {
   }
 };
 
+//======================================================
+const getContractByClientId = async (req, res) => {
+  try {
+    const clientId = req.params.id;
+    const contract = await Contract.findAll({where:{clientId}});
+    res.status(200).send({ contract });
+  } catch (error) { 
+    errorHandler(error, res);
+  }
+};
+
+const getContractByClientIdAndContractId = async (req, res) => {
+  try {
+    const clientId = req.params.id;
+    const contractId = req.params.contractId
+    console.log(contractId);
+    const contract = await Contract.findOne({where:{clientId, id:contractId}});
+    res.status(200).send({ contract });
+  } catch (error) {
+    errorHandler(error, res);
+  }
+};
+
+const getContractByOwnerIdAndContractId = async (req, res) => {
+  try {
+    const ownerId = req.params.id;
+    const contractId = req.params.contractId
+    const contract = await Contract.findOne({where:{ownerId, id:contractId}});
+    res.status(200).send({ contract });
+  } catch (error) {
+    errorHandler(error, res);
+  }
+};
+
+
+//======================================================
+
 module.exports = {
   addNewContract,
   getAllContracts,
   getContractById,
   updateContractById,
   deleteContractById,
+  getContractByClientId,
+  getContractByClientIdAndContractId,
+  getContractByOwnerIdAndContractId
 };

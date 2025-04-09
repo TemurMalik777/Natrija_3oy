@@ -30,10 +30,6 @@ const Admins = sequelize.define(
     },
     assigned_region_id: {
       type: DataTypes.INTEGER,
-      references: {
-        model: "regions",
-        key: "id",
-      },
     },
     created_at: {
       type: DataTypes.DATE,
@@ -53,7 +49,7 @@ const Admins = sequelize.define(
   }
 );
 
-Admins.belongsTo(Regions)
-Regions.hasMany(Admins)
+// Admins.belongsTo(Regions)
+// Regions.hasMany(Admins)
 
 module.exports = Admins;

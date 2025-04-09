@@ -12,10 +12,6 @@ const DeviceLogs = sequelize.define(
     },
     product_id: {
       type: DataTypes.INTEGER,
-      references: {
-          model: "products",
-          key: "id"
-      }
     },
     log_date: {
       type: DataTypes.DATE,

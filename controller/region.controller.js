@@ -25,7 +25,6 @@ const addNewRegion = async (req, res) => {
   }
 };
 
-// Barcha Regionlarni ko'rish (Read)
 const getAllRegions = async (req, res) => {
   try {
     const regions = await Regions.findAll();
@@ -35,7 +34,6 @@ const getAllRegions = async (req, res) => {
   }
 };
 
-// Regionni ID bilan topish (Read by ID)
 const getRegionById = async (req, res) => {
   try {
     const { id } = req.params;
@@ -49,7 +47,6 @@ const getRegionById = async (req, res) => {
   }
 };
 
-// Regionni yangilash (Update)
 const updateRegion = async (req, res) => {
   try {
     const { id } = req.params;
@@ -78,7 +75,6 @@ const updateRegion = async (req, res) => {
   }
 };
 
-// Regionni o'chirish (Delete)
 const deleteRegion = async (req, res) => {
   try {
     const { id } = req.params;

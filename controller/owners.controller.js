@@ -5,17 +5,12 @@ const bcrypt = require("bcrypt");
 const config = require("config");
 const jwtService = require("../services/jwt.service");
 const mailService = require("../services/mail.service");
-const uuid = require("uuid")
+const uuid = require("uuid");
 
 const addNewOwner = async (req, res) => {
   try {
-    const {
-      full_name,
-      phone_number,
-      email,
-      password,
-      organization_name,
-    } = req.body;
+    const { full_name, phone_number, email, password, organization_name } =
+      req.body;
 
     const { error } = ownerValidation.validate({
       full_name,
@@ -37,7 +32,7 @@ const addNewOwner = async (req, res) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    const activation_link = uuid.v4()
+    const activation_link = uuid.v4();
 
     const newOwner = await Owners.create({
       full_name,
@@ -45,7 +40,7 @@ const addNewOwner = async (req, res) => {
       email,
       password: hashedPassword,
       organization_name,
-      activation_link
+      activation_link,
     });
 
     await mailService.sendActivationMail(
@@ -57,7 +52,7 @@ const addNewOwner = async (req, res) => {
       id: newOwner.id,
       email: newOwner.email,
       full_name: newOwner.full_name,
-      role: "owner"
+      role: "owner",
     };
 
     const tokens = jwtService.generateTokens(payload);
@@ -65,6 +60,8 @@ const addNewOwner = async (req, res) => {
     res.status(201).send({
       message: "New owner added",
       newOwner,
+      accessToken: tokens.accesstoken,
+      refreshTokenClients: tokens.refreshtoken,
     });
   } catch (error) {
     errorHandler(error, res);
@@ -84,7 +81,7 @@ const activateOwner = async (req, res) => {
       id: owner.id,
       email: owner.email,
       full_name: owner.full_name,
-      role: "owner"
+      role: "owner",
     };
 
     const tokens = jwtService.generateTokens(payload);
@@ -108,7 +105,6 @@ const activateOwner = async (req, res) => {
   }
 };
 
-
 //---------------------------------------------------------------------
 
 const loginOwner = async (req, res) => {
@@ -129,7 +125,7 @@ const loginOwner = async (req, res) => {
       id: owner.id,
       email: owner.email,
       full_name: owner.full_name,
-      role: "owner"
+      role: "owner",
     };
 
     const tokens = jwtService.generateTokens(payload);
@@ -195,7 +191,7 @@ const refreshTokenOwner = async (req, res) => {
       id: owner.id,
       email: owner.email,
       full_name: owner.full_name,
-      role: "owner"
+      role: "owner",
     };
 
     const tokens = jwtService.generateTokens(payload);
@@ -250,7 +246,7 @@ const updateOwnerById = async (req, res) => {
       organization_name,
     } = req.body;
 
-    const { error } = ownerValidation(req);
+    const { error } = ownerValidation.validate(req);
     if (error) {
       return res.status(400).send({
         message: "Validation error",
@@ -308,5 +304,5 @@ module.exports = {
   getOwnerById,
   updateOwnerById,
   deleteOwnerById,
-  activateOwner
+  activateOwner,
 };

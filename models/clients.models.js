@@ -31,10 +31,6 @@ const Clients = sequelize.define(
     },
     region_id: {
       type: DataTypes.INTEGER,
-      references: {
-        model: "regions",
-        key: "id",
-      },
     },
     address: {
       type: DataTypes.STRING(255),
@@ -58,9 +54,9 @@ const Clients = sequelize.define(
   }
 );
 
-Clients.belongsTo(Regions, {
-  foreignKey: "region_id",
-});
+// Clients.belongsTo(Regions, {
+//   foreignKey: "region_id",
+// });
 Regions.hasMany(Clients, {
   foreignKey: "region_id",
 });

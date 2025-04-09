@@ -10,10 +10,6 @@ const Payments = sequelize.define("payments", {
   },
   contract_id: {
     type: DataTypes.INTEGER,
-    references: {
-      model: "contracts",
-      key: "id",
-    },
   },
   amount: {
     type: DataTypes.DECIMAL,

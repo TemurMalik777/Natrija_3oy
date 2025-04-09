@@ -1,8 +1,18 @@
-const ApiError = require("../../helpers/api.error");
+const { errorHandler } = require("../../helpers/error_handler");
 
 module.exports = function (req, res, next) {
-  if (req.user.role != "owner") {
-    throw ApiError.forbidden("Owner boshqasiga kirishga ruxsat yo'q");
+  try {
+    const id = req.params.id
+    if (req.user.role != "owner") {
+      return res.status(403).send({ message: "Productni faqat owner qo'sha oladi"})
+    }
+    if (id != req.user.id) {
+      return res.status(403).send({
+        messagae: "Faqat shaxsiy malumotlarni ko'rishga ruxsat etiladi. ",
+      });
+    }
+    next();
+  } catch (error) {
+    errorHandler(error, res)
   }
-  next();
 };

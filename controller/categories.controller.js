@@ -6,7 +6,7 @@ const addNewCategory = async (req, res) => {
   try {
     const { name } = req.body;
 
-    const { error } = categoriesValidation(req);
+    const { error } = categoriesValidation.valiedate(req);
     if (error) {
       return res.status(400).send({
         message: "Validation error",
@@ -14,7 +14,7 @@ const addNewCategory = async (req, res) => {
       });
     }
 
-    const newCategory = await Categories.create({ name });
+    const newCategory = await Categories.validate({ name });
 
     res.status(201).send({
       message: "New category added",

@@ -1,22 +1,22 @@
-// middleware/guard/client.self.guard.js
-
 const { errorHandler } = require("../../helpers/error_handler");
 
 module.exports = function (req, res, next) {
   try {
-    const currentClient = req.client;
-    const currentAdmin = req.admin;
-    const requestedId = parseInt(req.params.id);
-
-    if (currentAdmin) return next(); // admin bo‘lsa — hammasi mumkin
-
-    if (currentClient && currentClient.id === requestedId) {
-      return next(); // o‘zining ID bo‘lsa ruxsat
+    const id = req.params.id;
+    if (req.user.role === "owner") {
+      return res
+        .status(403)
+        .send({ message: "Ruxsat berilmagan foydalanuvchi" });
     }
 
-    return res.status(403).send({
-      message: "Faqat o‘zingizning ma’lumotlaringizga ruxsat beriladi.",
-    });
+    if (req.user.role != "admin"){
+      if (id != req.user.id) {
+        return res.status(403).send({
+          messagae: "Faqat shaxsiy malumotlarni ko'rishga ruxsat etiladi. ",
+        });
+      }
+    }
+    next();
   } catch (error) {
     errorHandler(error, res);
   }

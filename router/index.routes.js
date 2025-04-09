@@ -9,6 +9,7 @@ const ownerRoute = require("./owners.routes");
 const categoryRoute = require("./categories.routes")
 const deviceLogsRoute = require("./deviceLogs.routes")
 const contractRoute = require("./contracts.routes")
+const productRoute = require("./products.routes")
 // const otpCreateRoute = require("./otpCreate.routes")
 
 router.use("/admins", adminRoute);
@@ -20,6 +21,7 @@ router.use("/owners", ownerRoute);
 router.use("/categories", categoryRoute)
 router.use("/deviceLogs", deviceLogsRoute)
 router.use("/contracts", contractRoute)
+router.use("/products", productRoute)
 // router.use("/otpCreate", otpCreateRoute)
 
 

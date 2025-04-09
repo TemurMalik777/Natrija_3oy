@@ -1,7 +1,7 @@
 const { errorHandler } = require("../helpers/error_handler");
 const Regions = require("../models/region.models");
 const Clients = require("../models/clients.models");
-const clientValidation = require("../validations/clients.validation");
+const { clientValidation } = require("../validations/clients.validation");
 const bcrypt = require("bcrypt");
 const config = require("config");
 const jwtService = require("../services/jwt.service");
@@ -10,6 +10,12 @@ const uuid = require("uuid");
 
 const addNewClient = async (req, res) => {
   try {
+    const { error, value } = clientValidation(req.body);
+
+    if (error) {
+      errorHandler(error, res);
+    }
+
     const {
       first_name,
       last_name,
@@ -20,25 +26,8 @@ const addNewClient = async (req, res) => {
       address,
       password_series,
       password_selfie,
-    } = req.body;
-
-    const { error } = clientValidation.validate({
-      first_name,
-      last_name,
-      phone,
-      email,
-      password,
-      region_id,
-      address,
-      password_series,
-      password_selfie,
-    });
-    if (error) {
-      return res.status(400).send({
-        message: "Validation error",
-        error: error.details,
-      });
-    }
+    } = value;
+    console.log(value);
 
     const existing = await Clients.findOne({ where: { email } });
     if (existing) {
@@ -77,8 +66,8 @@ const addNewClient = async (req, res) => {
     res.status(201).send({
       message: "New client added",
       newClient,
-      // accessToken: tokens.accesstoken,
-      // refreshTokenClients: tokens.refreshtoken,
+      accessToken: tokens.accesstoken,
+      refreshTokenClients: tokens.refreshtoken,
     });
   } catch (error) {
     errorHandler(error, res);
@@ -208,7 +197,7 @@ const refreshTokenClient = async (req, res) => {
       id: client.id,
       email: client.email,
       phone: client.phone,
-      role: "client"
+      role: "client",
     };
 
     const tokens = jwtService.generateTokens(payload);
@@ -260,6 +249,11 @@ const getClientById = async (req, res) => {
 const updateClientById = async (req, res) => {
   try {
     const { id } = req.params;
+
+    const { error, value } = clientValidation(req.body);
+    if (error) {
+      return errorHandler(error, res);
+    }
     const {
       first_name,
       last_name,
@@ -271,22 +265,15 @@ const updateClientById = async (req, res) => {
       password_series,
       password_selfie,
       refresh_token,
-    } = req.body;
+    } = value;
 
-    const { error } = clientValidation.validate(req);
-    if (error) {
-      return res.status(400).send({
-        message: "Validation error",
-        error: error.details,
-      });
-    }
 
     const client = await Clients.findByPk(id);
     if (!client) {
       return res.status(404).send({ message: "Client not found" });
     }
 
-    await client.update({
+    const [updateCount, updateClent] = await Clients.update({
       first_name,
       last_name,
       phone,
@@ -297,9 +284,16 @@ const updateClientById = async (req, res) => {
       password_series,
       password_selfie,
       refresh_token,
-    });
+    },
+    { where: { id }, returning: true }
+  );
+
+  if (updateCount === 0) {
+    return res.status(400).send({ message: "Client update failed" });
+  }
 
     res.status(200).send({
+      updateClent: updateClent[1],
       message: "Client updated successfully",
       client,
     });
