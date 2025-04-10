@@ -4,7 +4,7 @@ const contractValidation = require("../validations/contracts.validation");
 
 const addNewContract = async (req, res) => {
   try {
-    const { product_id, client_id, start_date, end_date, total_price, status } =
+    const { productId, clientId, start_date, end_date, total_price, statusId, ownerId } =
       req.body;
 
     const { error } = contractValidation(req);
@@ -15,12 +15,13 @@ const addNewContract = async (req, res) => {
     }
 
     const newContract = await Contracts.create({
-      product_id,
-      client_id,
+      productId,
+      clientId,
       start_date,
       end_date,
       total_price,
-      status,
+      statusId,
+      ownerId
     });
 
     res.status(201).send({ message: "New contract added", newContract });
@@ -100,7 +101,7 @@ const deleteContractById = async (req, res) => {
 const getContractByClientId = async (req, res) => {
   try {
     const clientId = req.params.id;
-    const contract = await Contract.findAll({where:{clientId}});
+    const contract = await Contracts.findAll({where:{clientId}});
     res.status(200).send({ contract });
   } catch (error) { 
     errorHandler(error, res);
@@ -112,7 +113,7 @@ const getContractByClientIdAndContractId = async (req, res) => {
     const clientId = req.params.id;
     const contractId = req.params.contractId
     console.log(contractId);
-    const contract = await Contract.findOne({where:{clientId, id:contractId}});
+    const contract = await Contracts.findOne({where:{clientId, id:contractId}});
     res.status(200).send({ contract });
   } catch (error) {
     errorHandler(error, res);
@@ -123,7 +124,17 @@ const getContractByOwnerIdAndContractId = async (req, res) => {
   try {
     const ownerId = req.params.id;
     const contractId = req.params.contractId
-    const contract = await Contract.findOne({where:{ownerId, id:contractId}});
+    const contract = await Contracts.findOne({where:{ownerId, id:contractId}});
+    res.status(200).send({ contract });
+  } catch (error) {
+    errorHandler(error, res);
+  }
+};
+
+const getContractByOwnerId = async (req, res) => {
+  try {
+    const ownerId = req.params.id;
+    const contract = await Contracts.findAll({where:{ownerId}});
     res.status(200).send({ contract });
   } catch (error) {
     errorHandler(error, res);
@@ -141,5 +152,6 @@ module.exports = {
   deleteContractById,
   getContractByClientId,
   getContractByClientIdAndContractId,
-  getContractByOwnerIdAndContractId
+  getContractByOwnerIdAndContractId,
+  getContractByOwnerId
 };

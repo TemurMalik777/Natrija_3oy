@@ -6,15 +6,15 @@ const errorHandling = require("./middleware/error/error.handling");
 const cookieParser = require("cookie-parser");
 // const { resError } = require("./services/logger.service");
 // const { reqLogger } = require("./loggers/request.error.logger"); // reqLoggerni import qilish
-// const logger = require("./services/logger.service");
+const logger = require("./services/logger.service");
 
 const PORT = config.get("port") || 3030;
 
-// logger.log("info", "LOG ma'lumotlari");
-// logger.error("ERROR ma'lumotlari");
-// logger.debug("DEBUG ma'lumotlari");
-// logger.warn("WARN ma'lumotlari");
-// logger.info("INFO ma'lumotlari");
+logger.log("info", "LOG ma'lumotlari");
+logger.error("ERROR ma'lumotlari");
+logger.debug("DEBUG ma'lumotlari");
+logger.warn("WARN ma'lumotlari");
+logger.info("INFO ma'lumotlari");
 
 const app = express();
 app.use(cookieParser());

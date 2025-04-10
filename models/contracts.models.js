@@ -3,6 +3,7 @@ const { DataTypes } = require("sequelize");
 const Clients = require("./clients.models");
 const Status = require("./status.models");
 const Products = require("./products.models");
+const Owners = require("./owners.models");
 
 const Contracts = sequelize.define(
   "contracts",
@@ -12,16 +13,6 @@ const Contracts = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
-    product_id: {
-      type: DataTypes.INTEGER,
-      // references: {
-      //   model: "products",
-      //   key: "id",
-      // },
-    },
-    client_id: {
-      type: DataTypes.INTEGER,
-    },
     start_date: {
       type: DataTypes.DATE,
     },
@@ -30,13 +21,6 @@ const Contracts = sequelize.define(
     },
     total_price: {
       type: DataTypes.DECIMAL,
-    },
-    status_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "status",
-        key: "id",
-      },
     },
   },
   {
@@ -51,7 +35,10 @@ Clients.hasMany(Contracts);
 Contracts.belongsTo(Status);
 Status.hasMany(Contracts);
 
-Contracts.belongsTo(Products, { foreignKey: "contract_id" });
-Products.hasMany(Contracts, { foreignKey: "contract_id" });
+Contracts.belongsTo(Products);
+Products.hasMany(Contracts);
+
+Contracts.belongsTo(Owners)
+Owners.hasMany(Contracts)
 
 module.exports = Contracts;

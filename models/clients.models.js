@@ -54,9 +54,9 @@ const Clients = sequelize.define(
   }
 );
 
-// Clients.belongsTo(Regions, {
-//   foreignKey: "region_id",
-// });
+Clients.belongsTo(Regions, {
+  foreignKey: "region_id",
+});
 Regions.hasMany(Clients, {
   foreignKey: "region_id",
 });

@@ -452,3 +452,123 @@
 2025-04-09T16:30:02.990Z [sequelize-project] error: insert or update on table "products" violates foreign key constraint "products_owner_id_fkey"
 2025-04-09T17:12:52.538Z [sequelize-project] error: "id" is not allowed
 2025-04-09T18:44:48.843Z [sequelize-project] error: jwt expired
+2025-04-10T03:20:35.922Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:20:40.627Z [sequelize-project] error: jwt expired
+2025-04-10T03:21:17.194Z [sequelize-project] error: regions is not associated to clients!
+2025-04-10T03:21:50.960Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:21:56.467Z [sequelize-project] error: regions is not associated to clients!
+2025-04-10T03:22:09.926Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:23:04.520Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:23:28.920Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:23:56.464Z [sequelize-project] error: regions is not associated to clients!
+2025-04-10T03:25:43.273Z [sequelize-project] error: insert or update on table "clients" violates foreign key constraint "clients_region_id_fkey"
+2025-04-10T03:26:37.417Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:26:56.587Z [sequelize-project] error: regions is not associated to clients!
+2025-04-10T03:29:42.300Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:29:56.387Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:35:57.015Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:36:03.188Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:36:06.038Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:36:08.677Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:36:21.608Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:36:23.157Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:36:31.326Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:43:42.665Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:44:27.728Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:44:31.750Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:44:36.813Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:44:45.161Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:45:23.294Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:45:27.110Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:45:34.504Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:45:40.933Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:46:40.954Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:46:44.809Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:46:47.550Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:47:06.285Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:49:25.720Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:49:48.386Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:49:50.133Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:49:57.820Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:54:36.860Z [sequelize-project] error: jwt expired
+2025-04-10T03:58:09.235Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T03:58:11.438Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:02:10.765Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:06:07.720Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:06:12.853Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:06:32.698Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:06:41.011Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:06:58.074Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:07:35.008Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:07:36.090Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:08:53.744Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:08:54.893Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:09:06.191Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:09:09.744Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:10:26.666Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:10:32.403Z [sequelize-project] error: Expected ',' or '}' after property value in JSON at position 146 (line 8 column 1)
+2025-04-10T04:11:50.168Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:11:54.834Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:12:00.554Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:12:01.986Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:12:07.979Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:12:10.735Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:12:15.595Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:12:17.078Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:13:10.503Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:13:11.816Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:17:31.070Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:17:38.362Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:18:47.915Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:19:25.369Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:25:50.553Z [sequelize-project] error: Contract is not defined
+2025-04-10T04:27:10.099Z [sequelize-project] error: Contract is not defined
+2025-04-10T04:27:34.263Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:28:02.680Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:28:04.133Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:28:08.410Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:28:12.052Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:29:15.889Z [sequelize-project] error: WHERE parameter "id" has invalid "undefined" value
+2025-04-10T04:32:26.945Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:35:18.835Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:35:28.956Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:35:40.177Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:35:45.662Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:36:03.411Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:36:06.406Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:36:08.760Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:36:10.429Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:36:11.828Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:36:48.880Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:36:50.065Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:41:30.601Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:45:04.932Z [sequelize-project] error: invalid token
+2025-04-10T04:46:47.561Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:46:48.547Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:49:05.218Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:49:06.380Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:49:34.675Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:50:06.542Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:50:08.792Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:50:38.116Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:50:39.880Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:50:43.359Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:51:01.945Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:51:09.262Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:51:11.177Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:51:20.019Z [sequelize-project] error: ownerValidation.validate is not a function
+2025-04-10T04:52:21.537Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:52:34.786Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:52:42.132Z [sequelize-project] error: Validation error
+2025-04-10T04:54:01.757Z [sequelize-project] error: Validation error
+2025-04-10T04:54:39.604Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:54:42.552Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:54:51.547Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:54:58.625Z [sequelize-project] error: Validation error
+2025-04-10T04:55:27.967Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:55:32.496Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:55:36.674Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:55:40.510Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:55:49.460Z [sequelize-project] error: Validation error
+2025-04-10T04:56:59.699Z [sequelize-project] error: ERROR ma'lumotlari
+2025-04-10T04:57:16.067Z [sequelize-project] error: Validation error

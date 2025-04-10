@@ -1,15 +1,13 @@
 const sequelize = require("../config/db");
 const { DataTypes } = require("sequelize");
 const Contracts = require("./contracts.models");
+const Clients = require("./clients.models");
 
 const Payments = sequelize.define("payments", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
-  },
-  contract_id: {
-    type: DataTypes.INTEGER,
   },
   amount: {
     type: DataTypes.DECIMAL,
@@ -24,6 +22,9 @@ const Payments = sequelize.define("payments", {
 
 Payments.belongsTo(Contracts);
 Contracts.hasMany(Payments);
+
+Payments.belongsTo(Clients)
+Clients.hasMany(Payments)
 
 // Payments.belongsTo(Contracts, { foreignKey: "contract_id", as: "contract" });
 // Contracts.hasMany(Payments, { foreignKey: "contract_id" });

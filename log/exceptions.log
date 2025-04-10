@@ -9316,3 +9316,519 @@ SyntaxError: Unexpected token '!'
     at Module.require (node:internal/modules/cjs/loader:1311:12)
     at require (node:internal/modules/helpers:136:16)
     at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\owners.routes.js:16:20)
+2025-04-10T03:21:48.592Z [sequelize-project] error: uncaughtException: regionRoute is not defined
+ReferenceError: regionRoute is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:16:24)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\app.js:4:20)
+2025-04-10T03:22:07.461Z [sequelize-project] error: uncaughtException: regionRoute is not defined
+ReferenceError: regionRoute is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:16:24)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\app.js:4:20)
+2025-04-10T03:23:24.414Z [sequelize-project] error: uncaughtException: Unexpected token ','
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\contracts.models.js:17
+    ,
+    ^
+
+SyntaxError: Unexpected token ','
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:3:19)
+2025-04-10T03:36:47.279Z [sequelize-project] error: uncaughtException: paym is not defined
+ReferenceError: paym is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:31:1)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\paymetns.controller.js:2:18)
+2025-04-10T03:37:02.798Z [sequelize-project] error: uncaughtException: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+Error: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+    at payments.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:63:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:32:10)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T03:37:08.155Z [sequelize-project] error: uncaughtException: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+Error: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+    at payments.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:63:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:32:10)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T03:37:11.274Z [sequelize-project] error: uncaughtException: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+Error: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+    at payments.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:63:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:32:10)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T03:37:13.518Z [sequelize-project] error: uncaughtException: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+Error: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+    at payments.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:63:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:32:10)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T03:38:19.185Z [sequelize-project] error: uncaughtException: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+Error: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+    at payments.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:63:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:32:10)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T03:39:09.081Z [sequelize-project] error: uncaughtException: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+Error: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+    at payments.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:63:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:32:10)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T03:41:18.925Z [sequelize-project] error: uncaughtException: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+Error: payments.belongsTo called with something that's not a subclass of Sequelize.Model
+    at payments.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:63:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:29:10)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T03:45:25.768Z [sequelize-project] error: uncaughtException: Unexpected identifier 'contract_id'
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\paymnets.validation.js:5
+    contract_id: Joi.number().integer().required(),
+    ^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'contract_id'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\paymetns.controller.js:3:27)
+2025-04-10T03:58:15.989Z [sequelize-project] error: uncaughtException: get is not defined
+ReferenceError: get is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:00:45.588Z [sequelize-project] error: uncaughtException: get is not defined
+ReferenceError: get is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:00:49.464Z [sequelize-project] error: uncaughtException: get is not defined
+ReferenceError: get is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:00:51.616Z [sequelize-project] error: uncaughtException: getC is not defined
+ReferenceError: getC is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\contracts.controller.js:155:3)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:10:5)
+2025-04-10T04:00:55.970Z [sequelize-project] error: uncaughtException: get is not defined
+ReferenceError: get is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:01:36.425Z [sequelize-project] error: uncaughtException: getyC is not defined
+ReferenceError: getyC is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:01:38.985Z [sequelize-project] error: uncaughtException: getC is not defined
+ReferenceError: getC is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:01:42.892Z [sequelize-project] error: uncaughtException: get is not defined
+ReferenceError: get is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:01:44.799Z [sequelize-project] error: uncaughtException: getOw is not defined
+ReferenceError: getOw is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:23:66)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:06:53.610Z [sequelize-project] error: uncaughtException: Unexpected token '}'
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\contracts.models.js:25
+  },
+  ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:3:19)
+2025-04-10T04:09:03.834Z [sequelize-project] error: uncaughtException: Unexpected token ','
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\contracts.validation.js:10
+    statusId: Joi.,
+                  ^
+
+SyntaxError: Unexpected token ','
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\contracts.controller.js:3:28)
+2025-04-10T04:17:27.109Z [sequelize-project] error: uncaughtException: missing ) after argument list
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:26
+router.get("/:id", clien getContractById);
+                   ^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:17:28.067Z [sequelize-project] error: uncaughtException: missing ) after argument list
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:26
+router.get("/:id", clientGuard getContractById);
+                   ^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:17:35.147Z [sequelize-project] error: uncaughtException: missing ) after argument list
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:26
+router.get("/:id", clientGuard, clie getContractById);
+                                ^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:17:36.981Z [sequelize-project] error: uncaughtException: missing ) after argument list
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:26
+router.get("/:id", clientGuard, clietnSelfGuard getContractById);
+                                ^^^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:19:20.322Z [sequelize-project] error: uncaughtException: Unexpected token ','
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:26
+router.get("/:id", clientGuard, , getContractById);
+                                ^
+
+SyntaxError: Unexpected token ','
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:19:22.641Z [sequelize-project] error: uncaughtException: clie is not defined
+ReferenceError: clie is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\contracts.routes.js:26:33)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\router\index.routes.js:11:23)
+2025-04-10T04:35:30.992Z [sequelize-project] error: uncaughtException: Owner is not defined
+ReferenceError: Owner is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\contracts.models.js:42:1)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:3:19)
+2025-04-10T04:35:33.030Z [sequelize-project] error: uncaughtException: Owner is not defined
+ReferenceError: Owner is not defined
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\contracts.models.js:42:1)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\payments.models.js:3:19)
+2025-04-10T04:35:42.361Z [sequelize-project] error: uncaughtException: owners.hasMany called with something that's not a subclass of Sequelize.Model
+Error: owners.hasMany called with something that's not a subclass of Sequelize.Model
+    at owners.hasMany (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\node_modules\sequelize\lib\associations\mixin.js:13:13)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\models\contracts.models.js:42:8)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-04-10T04:49:38.280Z [sequelize-project] error: uncaughtException: Unexpected token 'const'
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\owners.validation.js:5
+const ownerValidation = Joi.object({
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\owners.controller.js:3:25)
+2025-04-10T04:49:42.328Z [sequelize-project] error: uncaughtException: Missing initializer in const declaration
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\owners.validation.js:4
+const owner
+      ^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\owners.controller.js:3:25)
+2025-04-10T04:49:44.401Z [sequelize-project] error: uncaughtException: Missing initializer in const declaration
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\owners.validation.js:4
+const ownerValidation
+      ^^^^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\owners.controller.js:3:25)
+2025-04-10T04:49:53.563Z [sequelize-project] error: uncaughtException: Unexpected token 'const'
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\owners.validation.js:5
+const ownerValidation = Joi.object({
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\owners.controller.js:3:25)
+2025-04-10T04:49:58.099Z [sequelize-project] error: uncaughtException: Identifier 'ownerValidation' has already been declared
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\owners.validation.js:7
+const ownerValidation = Joi.object({
+      ^
+
+SyntaxError: Identifier 'ownerValidation' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\owners.controller.js:3:25)
+2025-04-10T04:49:59.246Z [sequelize-project] error: uncaughtException: Identifier 'ownerValidation' has already been declared
+C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\validations\owners.validation.js:7
+const ownerValidation = Joi.object({
+      ^
+
+SyntaxError: Identifier 'ownerValidation' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\2_oy_Nodejs\3oy_yangiMavzu\Natija\qx_texnika_ijara\controller\owners.controller.js:3:25)

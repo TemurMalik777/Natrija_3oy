@@ -4,7 +4,7 @@ const paymentValidation = require("../validations/paymnets.validation");
 
 const addNewPayment = async (req, res) => {
   try {
-    const { contract_id, amount, payment_date, method } = req.body;
+    const { contractId, amount, payment_date, method,clientId } = req.body;
 
     const { error } = paymentValidation(req);
     if (error) {
@@ -15,10 +15,11 @@ const addNewPayment = async (req, res) => {
     }
 
     const newPayment = await Payments.create({
-      contract_id,
+      contractId,
       amount,
       payment_date,
       method,
+      clientId
     });
 
     res.status(201).send({

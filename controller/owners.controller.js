@@ -12,7 +12,7 @@ const addNewOwner = async (req, res) => {
     const { full_name, phone_number, email, password, organization_name } =
       req.body;
 
-    const { error } = ownerValidation.validate({
+    const { error } = ownerValidation({
       full_name,
       phone_number,
       email,
@@ -237,6 +237,7 @@ const getOwnerById = async (req, res) => {
 const updateOwnerById = async (req, res) => {
   try {
     const { id } = req.params;
+    console.log(id);
     const {
       full_name,
       phone_number,
@@ -245,8 +246,8 @@ const updateOwnerById = async (req, res) => {
       refresh_token,
       organization_name,
     } = req.body;
-
-    const { error } = ownerValidation.validate(req);
+    console.log(req.body);
+    const { error } = ownerValidation(req.body);
     if (error) {
       return res.status(400).send({
         message: "Validation error",
